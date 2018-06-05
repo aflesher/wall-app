@@ -1,0 +1,15 @@
+$sidebar-width: 250px;
+$main-width: 1024px;
+$company-icon-size: 60px;
+$text-color: #000;
+$resume-text-color: #06658c;
+$header-color: #283136;
+$avatar-height: 180px;
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}

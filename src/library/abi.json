@@ -1,0 +1,270 @@
+[
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "posts",
+		"outputs": [
+			{
+				"name": "text",
+				"type": "string"
+			},
+			{
+				"name": "font",
+				"type": "uint8"
+			},
+			{
+				"name": "red",
+				"type": "uint8"
+			},
+			{
+				"name": "green",
+				"type": "uint8"
+			},
+			{
+				"name": "blue",
+				"type": "uint8"
+			},
+			{
+				"name": "poster",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "forSale",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "buyPost",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "getPost",
+		"outputs": [
+			{
+				"name": "text",
+				"type": "string"
+			},
+			{
+				"name": "font",
+				"type": "uint256"
+			},
+			{
+				"name": "red",
+				"type": "uint256"
+			},
+			{
+				"name": "green",
+				"type": "uint256"
+			},
+			{
+				"name": "blue",
+				"type": "uint256"
+			},
+			{
+				"name": "poster",
+				"type": "address"
+			},
+			{
+				"name": "price",
+				"type": "uint256"
+			},
+			{
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_text",
+				"type": "string"
+			},
+			{
+				"name": "_font",
+				"type": "uint8"
+			},
+			{
+				"name": "_red",
+				"type": "uint8"
+			},
+			{
+				"name": "_green",
+				"type": "uint8"
+			},
+			{
+				"name": "_blue",
+				"type": "uint8"
+			}
+		],
+		"name": "createPost",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_index",
+				"type": "uint256"
+			},
+			{
+				"name": "_price",
+				"type": "uint256"
+			}
+		],
+		"name": "sellPost",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getPostsCount",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "closePostSale",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_index",
+				"type": "uint256"
+			},
+			{
+				"name": "_text",
+				"type": "string"
+			},
+			{
+				"name": "_font",
+				"type": "uint8"
+			},
+			{
+				"name": "_red",
+				"type": "uint8"
+			},
+			{
+				"name": "_green",
+				"type": "uint8"
+			},
+			{
+				"name": "_blue",
+				"type": "uint8"
+			}
+		],
+		"name": "updatePost",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "price",
+				"type": "uint256"
+			}
+		],
+		"name": "NewListening",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "price",
+				"type": "uint256"
+			}
+		],
+		"name": "SoldPost",
+		"type": "event"
+	}
+]
